@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -cwd
 #$ -j y
-#sdfqsd$ -o /dev/null
+#d$ -o /dev/null
 #$ -l h_rt=1:30:00
 #$ -l h_vmem=5G
 

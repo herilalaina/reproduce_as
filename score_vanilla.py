@@ -17,10 +17,10 @@ def main(working_directory, time_limit, per_run_time_limit, task_id, seed):
         print("Direcotry {0} aleardy created.".format(configuration_output_dir))
 
     tmp_dir = os.path.join(configuration_output_dir, str(task_id))
-    try:
-        os.makedirs(tmp_dir)
-    except Exception as _:
-        print("Direcotry {0} aleardy created.".format(configuration_output_dir))
+    #try:
+    #    os.makedirs(tmp_dir)
+    #except Exception as _:
+    #    print("Direcotry {0} aleardy created.".format(configuration_output_dir))
 
     automl_arguments = {
         'time_left_for_this_task': time_limit,
