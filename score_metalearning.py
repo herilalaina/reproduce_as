@@ -17,7 +17,7 @@ def main(working_directory, time_limit, per_run_time_limit, task_id, seed):
 
     # path to the metadata directory. Is there ar better way to get this?
     metadata_directory = os.path.abspath(os.path.dirname(__file__))
-    metadata_directory = os.path.join(metadata_directory, "/home/tau/hrakotoa/Code/reproduce/autosklearn/metalearning/files/")
+    metadata_directory = os.path.join(metadata_directory, "/home/tau/hrakotoa/Code/reproduce/auto-sklearn/auto-sklearn/autosklearn/metalearning/files/")
     #metadata_directory = os.path.dirname(autosklearn.metalearning.files.__file__)
 
     # Create new metadata directory not containing task_id.

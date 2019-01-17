@@ -1,6 +1,7 @@
 import argparse
 import score_vanilla
 import score_ensemble
+import score_metalearning
 
 
 def main(working_directory, output_file, task_id, seed, model, time_limit, per_run_time_limit):
