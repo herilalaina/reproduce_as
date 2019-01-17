@@ -24,6 +24,4 @@ for seed in $seeds; do
 done
 echo "creating tesst files done"
 
-# run all commands. TODO: We do this with cluster!
-# bash test_commands.txt
-#bash test_run_all.sh
+bash test_run_all.sh
