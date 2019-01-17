@@ -14,13 +14,12 @@ echo $task_ids
 echo $seeds
 for seed in $seeds; do
     for task_id in $task_ids; do
-        #for model in vanilla ensemble; do #ensemble metalearning meta_ensemble; do
+        for model in vanilla; do #ensemble metalearning meta_ensemble; do
             #cmd="python run_auto_sklearn.py --working-directory $test_dir --task-id $task_id \
             #-s $seed --output-file score_$model.csv --model $model"
-        model="vanilla"
-        cmd="$model $seed $task_id"
-        echo $cmd >> test_commands.txt
-        #done
+            cmd="$model $seed $task_id"
+            echo $cmd >> test_commands.txt
+        done
     done
 done
 echo "creating tesst files done"
